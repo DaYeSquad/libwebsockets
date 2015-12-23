@@ -1,0 +1,11 @@
+/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/CMakeFiles/ALL_BUILD.dir
+/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/CMakeFiles/ZERO_CHECK.dir
+/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/CMakeFiles/dist.dir
+/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/CMakeFiles/test-client.dir
+/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/CMakeFiles/test-echo.dir
+/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/CMakeFiles/test-fraggle.dir
+/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/CMakeFiles/test-ping.dir
+/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/CMakeFiles/test-server.dir
+/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/CMakeFiles/test-server-extpoll.dir
+/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/CMakeFiles/websockets.dir
+/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/CMakeFiles/websockets_shared.dir

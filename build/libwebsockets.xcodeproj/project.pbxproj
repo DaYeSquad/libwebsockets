@@ -1,0 +1,3430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		0417845F1E9947D687F0B55E /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AC07C236104141FEAA1055E3 /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				FC86A8CC01804E6596DB8924 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				E3975E8D01794C46B668C379 /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		123E0B108C48406D8C9A6BB4 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 92ADFCE0E5544A4CB8F390CF /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				8FA9770CAB9C46C6BB64C1D9 /* CMake Rules */,
+			);
+			dependencies = (
+				613CB148B95341F8A398259D /* PBXTargetDependency */,
+				CF9F2AB4C10444CAB23E82FA /* PBXTargetDependency */,
+				02E6D71A1206431F9D0F69F9 /* PBXTargetDependency */,
+				34F759852096413FBF277228 /* PBXTargetDependency */,
+				0E7BAA97B9C64923BC1926D8 /* PBXTargetDependency */,
+				F8BB07DCCC62436DB5246254 /* PBXTargetDependency */,
+				029EEBBF16A843F3A10E7CE9 /* PBXTargetDependency */,
+				2BD1286D0E05461EB9CC6636 /* PBXTargetDependency */,
+				F36B2F2519C345B88821925C /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		4C94FEBA34A84B5D8F73D664 /* dist */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 79F2FC1F01E84EB8B69DE47D /* Build configuration list for PBXAggregateTarget "dist" */;
+			buildPhases = (
+				A6A4A246E0AA402F99AED2CB /* CMake Rules */,
+			);
+			dependencies = (
+				D4D0EA8A9BA74CA1BE48A12E /* PBXTargetDependency */,
+			);
+			name = dist;
+			productName = dist;
+		};
+		7D6ED503CF064A6CBA7939B9 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 784FD2A536754AC488F6B263 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				2D239056B0F54EE8A0824C06 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				E360195DF18E4635974BB002 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		A93429E4422A4263A3EE5593 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 644C1954195C49CDB675166E /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				B561DCE408C4433BA0CD09D4 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1DD6C4EC05A74DB6BBD44B2C /* ssl.c in Sources */ = {isa = PBXBuildFile; fileRef = 9654200AB79141F599AB53F4 /* ssl.c */; settings = {COMPILER_FLAGS = ""; }; };
+		21E7530486494BBBAD934886 /* test-echo.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A6042084FBF49788A3AB254 /* test-echo.c */; settings = {COMPILER_FLAGS = ""; }; };
+		29EC417FB8534D7CA52E62CC /* parsers.c in Sources */ = {isa = PBXBuildFile; fileRef = 552D8564DEAC45C28A1859C2 /* parsers.c */; settings = {COMPILER_FLAGS = ""; }; };
+		42C8F0C11A8A45C680FAD2B2 /* client-parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 98EAD43CB44545B383D722F2 /* client-parser.c */; settings = {COMPILER_FLAGS = ""; }; };
+		42EDD5FE867340B1831BD744 /* daemonize.c in Sources */ = {isa = PBXBuildFile; fileRef = CB1CDCCB511C4C938659842E /* daemonize.c */; settings = {COMPILER_FLAGS = ""; }; };
+		445640C2ADCB4E279578D2A1 /* server.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD73DAF3D954DF3A56139A5 /* server.c */; settings = {COMPILER_FLAGS = ""; }; };
+		499CD8623A5342A1B7BBBCF4 /* parsers.c in Sources */ = {isa = PBXBuildFile; fileRef = 552D8564DEAC45C28A1859C2 /* parsers.c */; settings = {COMPILER_FLAGS = ""; }; };
+		4D744EE72B5A4A4080C387D6 /* client-handshake.c in Sources */ = {isa = PBXBuildFile; fileRef = E54CA66A9C314C9891344C9F /* client-handshake.c */; settings = {COMPILER_FLAGS = ""; }; };
+		4ED197A5E8D9479389C1F986 /* lws-plat-unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 320C4F2F0C5D4D31A712D850 /* lws-plat-unix.c */; settings = {COMPILER_FLAGS = ""; }; };
+		4FFAE0F8887348FC9875EB28 /* test-ping.c in Sources */ = {isa = PBXBuildFile; fileRef = 90BD94C27883450288D72AFB /* test-ping.c */; settings = {COMPILER_FLAGS = ""; }; };
+		57E3A7FE51564099AE4356E8 /* test-server.c in Sources */ = {isa = PBXBuildFile; fileRef = AE1407E2353348F5835B87DE /* test-server.c */; settings = {COMPILER_FLAGS = ""; }; };
+		58E41E32E94A4600B07C4A54 /* ssl.c in Sources */ = {isa = PBXBuildFile; fileRef = 9654200AB79141F599AB53F4 /* ssl.c */; settings = {COMPILER_FLAGS = ""; }; };
+		6167BCF7BF314D9DA8B3FE35 /* test-client.c in Sources */ = {isa = PBXBuildFile; fileRef = 9CC668F45F6A48A98BB1743F /* test-client.c */; settings = {COMPILER_FLAGS = ""; }; };
+		64C41757D4824F41B5476C63 /* extension-deflate-frame.c in Sources */ = {isa = PBXBuildFile; fileRef = E06B8C202499476D9D0029B6 /* extension-deflate-frame.c */; settings = {COMPILER_FLAGS = ""; }; };
+		65C43A33C3F54352847498ED /* service.c in Sources */ = {isa = PBXBuildFile; fileRef = B2BF1A2299FB401C9A93FA00 /* service.c */; settings = {COMPILER_FLAGS = ""; }; };
+		6986DBA5898241AABB9B3E84 /* sha-1.c in Sources */ = {isa = PBXBuildFile; fileRef = E849C9D51008467882EADD40 /* sha-1.c */; settings = {COMPILER_FLAGS = ""; }; };
+		6BD31B29EB384A7B9D3A0BBE /* client-handshake.c in Sources */ = {isa = PBXBuildFile; fileRef = E54CA66A9C314C9891344C9F /* client-handshake.c */; settings = {COMPILER_FLAGS = ""; }; };
+		6CB860B96B93438494DD01E8 /* context.c in Sources */ = {isa = PBXBuildFile; fileRef = 84449D06BB914ED586D15597 /* context.c */; settings = {COMPILER_FLAGS = ""; }; };
+		7725B7D7B15442F19EF20437 /* base64-decode.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DE2DAB74F3643B1BDE6C4EF /* base64-decode.c */; settings = {COMPILER_FLAGS = ""; }; };
+		7A69934E6F3748E6899C2863 /* client-parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 98EAD43CB44545B383D722F2 /* client-parser.c */; settings = {COMPILER_FLAGS = ""; }; };
+		7D91E33F61D24B42A4677799 /* base64-decode.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DE2DAB74F3643B1BDE6C4EF /* base64-decode.c */; settings = {COMPILER_FLAGS = ""; }; };
+		7EB3E0D679964B949CC718FC /* server-handshake.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BF10609696F49A0BE9ACE5C /* server-handshake.c */; settings = {COMPILER_FLAGS = ""; }; };
+		83D76A5562F647A1AE3FA800 /* handshake.c in Sources */ = {isa = PBXBuildFile; fileRef = A8045D3D7D7D43D284CC3EE2 /* handshake.c */; settings = {COMPILER_FLAGS = ""; }; };
+		8B2687658FA645FDB8BAC3D1 /* sha-1.c in Sources */ = {isa = PBXBuildFile; fileRef = E849C9D51008467882EADD40 /* sha-1.c */; settings = {COMPILER_FLAGS = ""; }; };
+		920AC79237994DA8997CFBA2 /* server.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DD73DAF3D954DF3A56139A5 /* server.c */; settings = {COMPILER_FLAGS = ""; }; };
+		96AB212284624926B37CBEF1 /* daemonize.c in Sources */ = {isa = PBXBuildFile; fileRef = CB1CDCCB511C4C938659842E /* daemonize.c */; settings = {COMPILER_FLAGS = ""; }; };
+		975133487DB145CAAA18D486 /* extension-deflate-stream.c in Sources */ = {isa = PBXBuildFile; fileRef = 3BC8A281BBCB4A7792B3C64A /* extension-deflate-stream.c */; settings = {COMPILER_FLAGS = ""; }; };
+		9CD889A002744882AEC68D2F /* lws-plat-unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 320C4F2F0C5D4D31A712D850 /* lws-plat-unix.c */; settings = {COMPILER_FLAGS = ""; }; };
+		A8A042702E3344D2A5FA4D74 /* test-server.c in Sources */ = {isa = PBXBuildFile; fileRef = AE1407E2353348F5835B87DE /* test-server.c */; settings = {COMPILER_FLAGS = ""; }; };
+		B2E482D200C94E5FA6F02C46 /* libwebsockets.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AB457A360834AE1A99619DD /* libwebsockets.c */; settings = {COMPILER_FLAGS = ""; }; };
+		BB82A0BBD0C34065B456015C /* server-handshake.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BF10609696F49A0BE9ACE5C /* server-handshake.c */; settings = {COMPILER_FLAGS = ""; }; };
+		BD0AE807234F4CF2930A37E2 /* client.c in Sources */ = {isa = PBXBuildFile; fileRef = 44783F76FB48465F90B482E9 /* client.c */; settings = {COMPILER_FLAGS = ""; }; };
+		BF15647EF22743BCA32A60E7 /* client.c in Sources */ = {isa = PBXBuildFile; fileRef = 44783F76FB48465F90B482E9 /* client.c */; settings = {COMPILER_FLAGS = ""; }; };
+		CF6797D0584B4D7E9ECAE1D8 /* pollfd.c in Sources */ = {isa = PBXBuildFile; fileRef = 4FAFA0D8C2FA48E2A302AC93 /* pollfd.c */; settings = {COMPILER_FLAGS = ""; }; };
+		D0E62043184E4CFC86F7F9BA /* handshake.c in Sources */ = {isa = PBXBuildFile; fileRef = A8045D3D7D7D43D284CC3EE2 /* handshake.c */; settings = {COMPILER_FLAGS = ""; }; };
+		D178317A059641B7A4892C6D /* service.c in Sources */ = {isa = PBXBuildFile; fileRef = B2BF1A2299FB401C9A93FA00 /* service.c */; settings = {COMPILER_FLAGS = ""; }; };
+		D8440F143E03497488A31E41 /* pollfd.c in Sources */ = {isa = PBXBuildFile; fileRef = 4FAFA0D8C2FA48E2A302AC93 /* pollfd.c */; settings = {COMPILER_FLAGS = ""; }; };
+		DCC93DA26B8245CE84B9499A /* test-fraggle.c in Sources */ = {isa = PBXBuildFile; fileRef = CAAA1D2621024D5B9CF69CD2 /* test-fraggle.c */; settings = {COMPILER_FLAGS = ""; }; };
+		DF1F22E1504042C79299B325 /* output.c in Sources */ = {isa = PBXBuildFile; fileRef = 86D26C1FC0DE45FDB3B37DB0 /* output.c */; settings = {COMPILER_FLAGS = ""; }; };
+		E0AB1A222F784146B83F62DB /* extension.c in Sources */ = {isa = PBXBuildFile; fileRef = 492A4B6E3BEE4B018A203DF8 /* extension.c */; settings = {COMPILER_FLAGS = ""; }; };
+		E0C94BF737B9448AA22C8B34 /* output.c in Sources */ = {isa = PBXBuildFile; fileRef = 86D26C1FC0DE45FDB3B37DB0 /* output.c */; settings = {COMPILER_FLAGS = ""; }; };
+		F030FEF024394EDB8FD60BFB /* extension-deflate-stream.c in Sources */ = {isa = PBXBuildFile; fileRef = 3BC8A281BBCB4A7792B3C64A /* extension-deflate-stream.c */; settings = {COMPILER_FLAGS = ""; }; };
+		F7EACE3A78F549ADB1DE2D43 /* context.c in Sources */ = {isa = PBXBuildFile; fileRef = 84449D06BB914ED586D15597 /* context.c */; settings = {COMPILER_FLAGS = ""; }; };
+		FCB100B5F88949D2A6C6FD6D /* extension-deflate-frame.c in Sources */ = {isa = PBXBuildFile; fileRef = E06B8C202499476D9D0029B6 /* extension-deflate-frame.c */; settings = {COMPILER_FLAGS = ""; }; };
+		FCEBC40AF0DD496DB631CA52 /* extension.c in Sources */ = {isa = PBXBuildFile; fileRef = 492A4B6E3BEE4B018A203DF8 /* extension.c */; settings = {COMPILER_FLAGS = ""; }; };
+		FFE1C2B54F2F4C9EB1C67B4F /* libwebsockets.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AB457A360834AE1A99619DD /* libwebsockets.c */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1198A4C383D4461196414864 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C5ABA370C774EF38A076118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 472C3DA5D07A4F198875819C;
+			remoteInfo = "test-fraggle";
+		};
+		14AC40714AB940668EAFA7C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C5ABA370C774EF38A076118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A93429E4422A4263A3EE5593;
+			remoteInfo = ZERO_CHECK;
+		};
+		1CEF3EAD65F54B629A73649E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C5ABA370C774EF38A076118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A93429E4422A4263A3EE5593;
+			remoteInfo = ZERO_CHECK;
+		};
+		1EA60FD4A5514BF8942130EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C5ABA370C774EF38A076118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50F90B5FD91748C38A6A06F9;
+			remoteInfo = websockets;
+		};
+		22CA13A8A0B44711954551DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C5ABA370C774EF38A076118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A93429E4422A4263A3EE5593;
+			remoteInfo = ZERO_CHECK;
+		};
+		38B30A83B6B4446CAD4DE407 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C5ABA370C774EF38A076118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21629C2F74664406BAFDC88E;
+			remoteInfo = "test-server";
+		};
+		4828A1E0318247EBA1C03CE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C5ABA370C774EF38A076118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDEDD8F9430241569B6F1FA2;
+			remoteInfo = "test-client";
+		};
+		5ADF4FE1AA324016A3A04312 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C5ABA370C774EF38A076118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50F90B5FD91748C38A6A06F9;
+			remoteInfo = websockets;
+		};
+		5E4315200C1945F08AE731F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C5ABA370C774EF38A076118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 515BBC3DC7674E94839B7208;
+			remoteInfo = "test-echo";
+		};
+		62DE91CC21E542858993D71D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C5ABA370C774EF38A076118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A93429E4422A4263A3EE5593;
+			remoteInfo = ZERO_CHECK;
+		};
+		63893FC730D343E8AA8C6CAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C5ABA370C774EF38A076118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50F90B5FD91748C38A6A06F9;
+			remoteInfo = websockets;
+		};
+		63B2DB4F41834C0F9C827D3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C5ABA370C774EF38A076118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EDF2121DD3546CBBCC8352D;
+			remoteInfo = websockets_shared;
+		};
+		6C06CD82ACCC475CB6E48C05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C5ABA370C774EF38A076118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50F90B5FD91748C38A6A06F9;
+			remoteInfo = websockets;
+		};
+		7337FA27F4B848699AA7750C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C5ABA370C774EF38A076118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 123E0B108C48406D8C9A6BB4;
+			remoteInfo = ALL_BUILD;
+		};
+		753B999837EA4043A4F18A3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C5ABA370C774EF38A076118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 123E0B108C48406D8C9A6BB4;
+			remoteInfo = ALL_BUILD;
+		};
+		80DFF3BE82644B55B3D62AF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C5ABA370C774EF38A076118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50F90B5FD91748C38A6A06F9;
+			remoteInfo = websockets;
+		};
+		986FAEE0809C4D718D204F8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C5ABA370C774EF38A076118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50F90B5FD91748C38A6A06F9;
+			remoteInfo = websockets;
+		};
+		A19008E3EB144778850E92F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C5ABA370C774EF38A076118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A93429E4422A4263A3EE5593;
+			remoteInfo = ZERO_CHECK;
+		};
+		A1CABC3E42A444DC837F9B53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C5ABA370C774EF38A076118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A93429E4422A4263A3EE5593;
+			remoteInfo = ZERO_CHECK;
+		};
+		A361620871A94BA0946119F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C5ABA370C774EF38A076118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A93429E4422A4263A3EE5593;
+			remoteInfo = ZERO_CHECK;
+		};
+		A80F2DEA9B414D5CA347B7BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C5ABA370C774EF38A076118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E5191F65D03475DBBA6AE42;
+			remoteInfo = "test-ping";
+		};
+		B0CA55DA9FFC4AB38E4E0B23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C5ABA370C774EF38A076118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A93429E4422A4263A3EE5593;
+			remoteInfo = ZERO_CHECK;
+		};
+		C7645606D2E346F8BCF05E34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C5ABA370C774EF38A076118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE110F73FC53414DB0070782;
+			remoteInfo = "test-server-extpoll";
+		};
+		D3FE8916089F478290180A03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C5ABA370C774EF38A076118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A93429E4422A4263A3EE5593;
+			remoteInfo = ZERO_CHECK;
+		};
+		EA5EDF61C10D42B688940DBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C5ABA370C774EF38A076118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A93429E4422A4263A3EE5593;
+			remoteInfo = ZERO_CHECK;
+		};
+		F1F1A536FCC449B0ABC58433 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C5ABA370C774EF38A076118 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50F90B5FD91748C38A6A06F9;
+			remoteInfo = websockets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02714C1C0B3C423DA322DF2D /* libwebsockets-test-fraggle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "libwebsockets-test-fraggle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12F4222464AD4B88A4043F58 /* libwebsockets-test-ping */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "libwebsockets-test-ping"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A6042084FBF49788A3AB254 /* test-echo.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "test-echo.c"; path = "test-server/test-echo.c"; sourceTree = SOURCE_ROOT; };
+		1DD73DAF3D954DF3A56139A5 /* server.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = server.c; path = lib/server.c; sourceTree = SOURCE_ROOT; };
+		2BB0FD527B79494A9F7AB43E /* lws_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = lws_config.h; path = build/lws_config.h; sourceTree = SOURCE_ROOT; };
+		320C4F2F0C5D4D31A712D850 /* lws-plat-unix.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "lws-plat-unix.c"; path = "lib/lws-plat-unix.c"; sourceTree = SOURCE_ROOT; };
+		373EFADE35214F75B0912674 /* libwebsockets.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libwebsockets.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		3969C05E0D6B4DFCA119DE9B /* libwebsockets-test-client */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "libwebsockets-test-client"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BC8A281BBCB4A7792B3C64A /* extension-deflate-stream.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "extension-deflate-stream.c"; path = "lib/extension-deflate-stream.c"; sourceTree = SOURCE_ROOT; };
+		3DE2DAB74F3643B1BDE6C4EF /* base64-decode.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "base64-decode.c"; path = "lib/base64-decode.c"; sourceTree = SOURCE_ROOT; };
+		44783F76FB48465F90B482E9 /* client.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = client.c; path = lib/client.c; sourceTree = SOURCE_ROOT; };
+		492A4B6E3BEE4B018A203DF8 /* extension.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = extension.c; path = lib/extension.c; sourceTree = SOURCE_ROOT; };
+		4FAFA0D8C2FA48E2A302AC93 /* pollfd.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = pollfd.c; path = lib/pollfd.c; sourceTree = SOURCE_ROOT; };
+		53A3EA23937C467F880D1AD2 /* libwebsockets.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = libwebsockets.h; path = lib/libwebsockets.h; sourceTree = SOURCE_ROOT; };
+		552D8564DEAC45C28A1859C2 /* parsers.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = parsers.c; path = lib/parsers.c; sourceTree = SOURCE_ROOT; };
+		5D3B66D59BF24D0DA8D336A1 /* extension-deflate-frame.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "extension-deflate-frame.h"; path = "lib/extension-deflate-frame.h"; sourceTree = SOURCE_ROOT; };
+		84449D06BB914ED586D15597 /* context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = lib/context.c; sourceTree = SOURCE_ROOT; };
+		8499076FB95147D391C6A4B2 /* libwebsockets-test-echo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "libwebsockets-test-echo"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86D26C1FC0DE45FDB3B37DB0 /* output.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = output.c; path = lib/output.c; sourceTree = SOURCE_ROOT; };
+		8BF10609696F49A0BE9ACE5C /* server-handshake.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "server-handshake.c"; path = "lib/server-handshake.c"; sourceTree = SOURCE_ROOT; };
+		90BD94C27883450288D72AFB /* test-ping.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "test-ping.c"; path = "test-server/test-ping.c"; sourceTree = SOURCE_ROOT; };
+		9654200AB79141F599AB53F4 /* ssl.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = ssl.c; path = lib/ssl.c; sourceTree = SOURCE_ROOT; };
+		98EAD43CB44545B383D722F2 /* client-parser.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "client-parser.c"; path = "lib/client-parser.c"; sourceTree = SOURCE_ROOT; };
+		9AB457A360834AE1A99619DD /* libwebsockets.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = libwebsockets.c; path = lib/libwebsockets.c; sourceTree = SOURCE_ROOT; };
+		9CC668F45F6A48A98BB1743F /* test-client.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "test-client.c"; path = "test-server/test-client.c"; sourceTree = SOURCE_ROOT; };
+		A35415A746C448709342AFD9 /* extension-deflate-stream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "extension-deflate-stream.h"; path = "lib/extension-deflate-stream.h"; sourceTree = SOURCE_ROOT; };
+		A8045D3D7D7D43D284CC3EE2 /* handshake.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = handshake.c; path = lib/handshake.c; sourceTree = SOURCE_ROOT; };
+		AE1407E2353348F5835B87DE /* test-server.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "test-server.c"; path = "test-server/test-server.c"; sourceTree = SOURCE_ROOT; };
+		B2BF1A2299FB401C9A93FA00 /* service.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = service.c; path = lib/service.c; sourceTree = SOURCE_ROOT; };
+		CAAA1D2621024D5B9CF69CD2 /* test-fraggle.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "test-fraggle.c"; path = "test-server/test-fraggle.c"; sourceTree = SOURCE_ROOT; };
+		CB1CDCCB511C4C938659842E /* daemonize.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = daemonize.c; path = lib/daemonize.c; sourceTree = SOURCE_ROOT; };
+		DC3ED1C15A2140B0878111DE /* libwebsockets-test-server */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "libwebsockets-test-server"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E06B8C202499476D9D0029B6 /* extension-deflate-frame.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "extension-deflate-frame.c"; path = "lib/extension-deflate-frame.c"; sourceTree = SOURCE_ROOT; };
+		E30C57D03600448AAC73375D /* private-libwebsockets.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = "private-libwebsockets.h"; path = "lib/private-libwebsockets.h"; sourceTree = SOURCE_ROOT; };
+		E54CA66A9C314C9891344C9F /* client-handshake.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "client-handshake.c"; path = "lib/client-handshake.c"; sourceTree = SOURCE_ROOT; };
+		E708BCEE8E6D46ED80290301 /* libwebsockets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libwebsockets.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E849C9D51008467882EADD40 /* sha-1.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = "sha-1.c"; path = "lib/sha-1.c"; sourceTree = SOURCE_ROOT; };
+		F3766CB630A84851AB9B9637 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F6F1AF3A638949B3961CF9C7 /* libwebsockets-test-server-extpoll */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "libwebsockets-test-server-extpoll"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		04BF98EC14B746B38A1E9CF1 /* Headers Private */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Headers Private";
+			sourceTree = "<group>";
+		};
+		21B4219EF6C24FB297DDC38A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2DF0B3692A9C4834A3142E0F /* test-client */ = {
+			isa = PBXGroup;
+			children = (
+				5CAD58F8D93940FC878B2618 /* Sources */,
+			);
+			name = "test-client";
+			sourceTree = "<group>";
+		};
+		3234AD736827402DBEDB13E2 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				774FC168857F4E67B9CB904F /* CMake Rules */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		3986182B898C44ECA022D734 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		4149DA2868C84EB9BB2D37A9 /* dist */ = {
+			isa = PBXGroup;
+			children = (
+				3986182B898C44ECA022D734 /* CMake Rules */,
+			);
+			name = dist;
+			sourceTree = "<group>";
+		};
+		4AA107C0A832461EA97F71F8 /* websockets */ = {
+			isa = PBXGroup;
+			children = (
+				04BF98EC14B746B38A1E9CF1 /* Headers Private */,
+				B81F872B6F014AD7A4F8B925 /* Headers Public */,
+				7C0FD77AC35C4AE3ADB8EA5E /* Sources */,
+			);
+			name = websockets;
+			sourceTree = "<group>";
+		};
+		4AE4506EECA74830ACE6991A /* test-server */ = {
+			isa = PBXGroup;
+			children = (
+				DB9C7422FB0A42E699E6416A /* Sources */,
+			);
+			name = "test-server";
+			sourceTree = "<group>";
+		};
+		567B36F63CC04A729909564F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				90BD94C27883450288D72AFB /* test-ping.c */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		56942D22828649E9A9CAFE69 /* websockets_shared */ = {
+			isa = PBXGroup;
+			children = (
+				6EE1CCE42897468E985166C9 /* Headers Private */,
+				C718E1B6038A4BE79F128617 /* Headers Public */,
+				AA9612EE75B44A1ABE8FE538 /* Sources */,
+				F3766CB630A84851AB9B9637 /* CMakeLists.txt */,
+			);
+			name = websockets_shared;
+			sourceTree = "<group>";
+		};
+		5CAD58F8D93940FC878B2618 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9CC668F45F6A48A98BB1743F /* test-client.c */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		65D3E885901E4675B1DB6D9B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AE1407E2353348F5835B87DE /* test-server.c */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		6A404CDFE25343C5B84756FE /* test-server-extpoll */ = {
+			isa = PBXGroup;
+			children = (
+				65D3E885901E4675B1DB6D9B /* Sources */,
+			);
+			name = "test-server-extpoll";
+			sourceTree = "<group>";
+		};
+		6EE1CCE42897468E985166C9 /* Headers Private */ = {
+			isa = PBXGroup;
+			children = (
+				2BB0FD527B79494A9F7AB43E /* lws_config.h */,
+				5D3B66D59BF24D0DA8D336A1 /* extension-deflate-frame.h */,
+				A35415A746C448709342AFD9 /* extension-deflate-stream.h */,
+				E30C57D03600448AAC73375D /* private-libwebsockets.h */,
+			);
+			name = "Headers Private";
+			sourceTree = "<group>";
+		};
+		774FC168857F4E67B9CB904F /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		7C0FD77AC35C4AE3ADB8EA5E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		8B7F19CD7E794002BD0C998C = {
+			isa = PBXGroup;
+			children = (
+				C0B5F1BE7C7F4144BE32B55F /* Sources */,
+				21B4219EF6C24FB297DDC38A /* Resources */,
+				8CF20E55EF6241D2AD1DB654 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CF20E55EF6241D2AD1DB654 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3969C05E0D6B4DFCA119DE9B /* libwebsockets-test-client */,
+				8499076FB95147D391C6A4B2 /* libwebsockets-test-echo */,
+				02714C1C0B3C423DA322DF2D /* libwebsockets-test-fraggle */,
+				12F4222464AD4B88A4043F58 /* libwebsockets-test-ping */,
+				DC3ED1C15A2140B0878111DE /* libwebsockets-test-server */,
+				F6F1AF3A638949B3961CF9C7 /* libwebsockets-test-server-extpoll */,
+				E708BCEE8E6D46ED80290301 /* libwebsockets.a */,
+				373EFADE35214F75B0912674 /* libwebsockets.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		989FE2F0839B448CACD33CD8 /* test-ping */ = {
+			isa = PBXGroup;
+			children = (
+				567B36F63CC04A729909564F /* Sources */,
+			);
+			name = "test-ping";
+			sourceTree = "<group>";
+		};
+		9C32B3BD86DA4CFC8C9FB93B /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				AACD8AF26CB94A99AE913B6A /* CMake Rules */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		A6678C671025478C9306702C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1A6042084FBF49788A3AB254 /* test-echo.c */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		AA9612EE75B44A1ABE8FE538 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3DE2DAB74F3643B1BDE6C4EF /* base64-decode.c */,
+				E54CA66A9C314C9891344C9F /* client-handshake.c */,
+				98EAD43CB44545B383D722F2 /* client-parser.c */,
+				44783F76FB48465F90B482E9 /* client.c */,
+				84449D06BB914ED586D15597 /* context.c */,
+				CB1CDCCB511C4C938659842E /* daemonize.c */,
+				E06B8C202499476D9D0029B6 /* extension-deflate-frame.c */,
+				3BC8A281BBCB4A7792B3C64A /* extension-deflate-stream.c */,
+				492A4B6E3BEE4B018A203DF8 /* extension.c */,
+				A8045D3D7D7D43D284CC3EE2 /* handshake.c */,
+				9AB457A360834AE1A99619DD /* libwebsockets.c */,
+				320C4F2F0C5D4D31A712D850 /* lws-plat-unix.c */,
+				86D26C1FC0DE45FDB3B37DB0 /* output.c */,
+				552D8564DEAC45C28A1859C2 /* parsers.c */,
+				4FAFA0D8C2FA48E2A302AC93 /* pollfd.c */,
+				8BF10609696F49A0BE9ACE5C /* server-handshake.c */,
+				1DD73DAF3D954DF3A56139A5 /* server.c */,
+				B2BF1A2299FB401C9A93FA00 /* service.c */,
+				E849C9D51008467882EADD40 /* sha-1.c */,
+				9654200AB79141F599AB53F4 /* ssl.c */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		AACD8AF26CB94A99AE913B6A /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		B81F872B6F014AD7A4F8B925 /* Headers Public */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Headers Public";
+			sourceTree = "<group>";
+		};
+		C0B5F1BE7C7F4144BE32B55F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3234AD736827402DBEDB13E2 /* ALL_BUILD */,
+				9C32B3BD86DA4CFC8C9FB93B /* ZERO_CHECK */,
+				4149DA2868C84EB9BB2D37A9 /* dist */,
+				2DF0B3692A9C4834A3142E0F /* test-client */,
+				D0CE79B1F007438ABEE0E04B /* test-echo */,
+				D36BE9ABB274404CB5D5EB41 /* test-fraggle */,
+				989FE2F0839B448CACD33CD8 /* test-ping */,
+				4AE4506EECA74830ACE6991A /* test-server */,
+				6A404CDFE25343C5B84756FE /* test-server-extpoll */,
+				4AA107C0A832461EA97F71F8 /* websockets */,
+				56942D22828649E9A9CAFE69 /* websockets_shared */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		C718E1B6038A4BE79F128617 /* Headers Public */ = {
+			isa = PBXGroup;
+			children = (
+				53A3EA23937C467F880D1AD2 /* libwebsockets.h */,
+			);
+			name = "Headers Public";
+			sourceTree = "<group>";
+		};
+		D0CE79B1F007438ABEE0E04B /* test-echo */ = {
+			isa = PBXGroup;
+			children = (
+				A6678C671025478C9306702C /* Sources */,
+			);
+			name = "test-echo";
+			sourceTree = "<group>";
+		};
+		D36BE9ABB274404CB5D5EB41 /* test-fraggle */ = {
+			isa = PBXGroup;
+			children = (
+				F49114E42FD14952A3692383 /* Sources */,
+			);
+			name = "test-fraggle";
+			sourceTree = "<group>";
+		};
+		DB9C7422FB0A42E699E6416A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		F49114E42FD14952A3692383 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CAAA1D2621024D5B9CF69CD2 /* test-fraggle.c */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21629C2F74664406BAFDC88E /* test-server */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AAE2363CCE64EBE9BF7D84D /* Build configuration list for PBXNativeTarget "test-server" */;
+			buildPhases = (
+				069E50C12D4A42F89F1C6246 /* Sources */,
+				6997E45B363A42C28B76B6E9 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55708F9DB7CA456DA7E02460 /* PBXTargetDependency */,
+				34CA311BFDDB4AFE8FB9C143 /* PBXTargetDependency */,
+			);
+			name = "test-server";
+			productName = "test-server";
+			productReference = DC3ED1C15A2140B0878111DE /* libwebsockets-test-server */;
+			productType = "com.apple.product-type.tool";
+		};
+		472C3DA5D07A4F198875819C /* test-fraggle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AE4E2EF1790488980B2651D /* Build configuration list for PBXNativeTarget "test-fraggle" */;
+			buildPhases = (
+				07C22CDBED1B450B9BD07765 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF12DA0185CC48F9BFDF11E3 /* PBXTargetDependency */,
+				E730FA5220574D5CAC435FD6 /* PBXTargetDependency */,
+			);
+			name = "test-fraggle";
+			productName = "test-fraggle";
+			productReference = 02714C1C0B3C423DA322DF2D /* libwebsockets-test-fraggle */;
+			productType = "com.apple.product-type.tool";
+		};
+		50F90B5FD91748C38A6A06F9 /* websockets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20F7D0C06461439DB3FE3DDC /* Build configuration list for PBXNativeTarget "websockets" */;
+			buildPhases = (
+				3D463DADF624426594149F64 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A45C876488943D28F538DC5 /* PBXTargetDependency */,
+			);
+			name = websockets;
+			productName = websockets;
+			productReference = E708BCEE8E6D46ED80290301 /* libwebsockets.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		515BBC3DC7674E94839B7208 /* test-echo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8040E41D30C1470CAE77E03F /* Build configuration list for PBXNativeTarget "test-echo" */;
+			buildPhases = (
+				5CDD24ED89144446AC04BC9B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E54BD9D18315431EB5003F2A /* PBXTargetDependency */,
+				B77E5F39C3EE4EB9BC649DF1 /* PBXTargetDependency */,
+			);
+			name = "test-echo";
+			productName = "test-echo";
+			productReference = 8499076FB95147D391C6A4B2 /* libwebsockets-test-echo */;
+			productType = "com.apple.product-type.tool";
+		};
+		6E5191F65D03475DBBA6AE42 /* test-ping */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34AF921307CC486E876DB4DB /* Build configuration list for PBXNativeTarget "test-ping" */;
+			buildPhases = (
+				E32ADCAA59924D6688DF7F35 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B92AF38B990C4596A4AED21D /* PBXTargetDependency */,
+				8B38F4B918494AFF8C3811B7 /* PBXTargetDependency */,
+			);
+			name = "test-ping";
+			productName = "test-ping";
+			productReference = 12F4222464AD4B88A4043F58 /* libwebsockets-test-ping */;
+			productType = "com.apple.product-type.tool";
+		};
+		7EDF2121DD3546CBBCC8352D /* websockets_shared */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A57806A8EEF4162AFE1C7F6 /* Build configuration list for PBXNativeTarget "websockets_shared" */;
+			buildPhases = (
+				058935100C50400C850D3B72 /* Sources */,
+				598BD390B791464DA7AFE541 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8165F9C8B9D4B6784B0FFBC /* PBXTargetDependency */,
+			);
+			name = websockets_shared;
+			productName = websockets_shared;
+			productReference = 373EFADE35214F75B0912674 /* libwebsockets.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		BDEDD8F9430241569B6F1FA2 /* test-client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16E1238FEC6E40FE926EDFBF /* Build configuration list for PBXNativeTarget "test-client" */;
+			buildPhases = (
+				19F4496FB1E042199032FA85 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9843C3447644D30BC63B43D /* PBXTargetDependency */,
+				6B4AB3AEADBB4F6E8456A3AA /* PBXTargetDependency */,
+			);
+			name = "test-client";
+			productName = "test-client";
+			productReference = 3969C05E0D6B4DFCA119DE9B /* libwebsockets-test-client */;
+			productType = "com.apple.product-type.tool";
+		};
+		EE110F73FC53414DB0070782 /* test-server-extpoll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 740E1EDCF66446A4B9588F44 /* Build configuration list for PBXNativeTarget "test-server-extpoll" */;
+			buildPhases = (
+				1A0C0954F1AF47E5844A49F0 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E851E77566E44A3D9445E2F5 /* PBXTargetDependency */,
+				886201BFA9194277939C1494 /* PBXTargetDependency */,
+			);
+			name = "test-server-extpoll";
+			productName = "test-server-extpoll";
+			productReference = F6F1AF3A638949B3961CF9C7 /* libwebsockets-test-server-extpoll */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C5ABA370C774EF38A076118 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0720;
+			};
+			buildConfigurationList = 1281DDB5828A4AAF8A1067D1 /* Build configuration list for PBXProject "libwebsockets" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8B7F19CD7E794002BD0C998C;
+			projectDirPath = ..;
+			projectRoot = "";
+			targets = (
+				123E0B108C48406D8C9A6BB4 /* ALL_BUILD */,
+				A93429E4422A4263A3EE5593 /* ZERO_CHECK */,
+				4C94FEBA34A84B5D8F73D664 /* dist */,
+				7D6ED503CF064A6CBA7939B9 /* install */,
+				0417845F1E9947D687F0B55E /* package */,
+				BDEDD8F9430241569B6F1FA2 /* test-client */,
+				515BBC3DC7674E94839B7208 /* test-echo */,
+				472C3DA5D07A4F198875819C /* test-fraggle */,
+				6E5191F65D03475DBBA6AE42 /* test-ping */,
+				21629C2F74664406BAFDC88E /* test-server */,
+				EE110F73FC53414DB0070782 /* test-server-extpoll */,
+				50F90B5FD91748C38A6A06F9 /* websockets */,
+				7EDF2121DD3546CBBCC8352D /* websockets_shared */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D239056B0F54EE8A0824C06 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build -f /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		598BD390B791464DA7AFE541 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build -f /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/CMakeScripts/websockets_shared_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		6997E45B363A42C28B76B6E9 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build -f /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/CMakeScripts/test-server_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		8FA9770CAB9C46C6BB64C1D9 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build -f /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		A6A4A246E0AA402F99AED2CB /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build -f /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/CMakeScripts/dist_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		B561DCE408C4433BA0CD09D4 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build -f /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		FC86A8CC01804E6596DB8924 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build -f /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		058935100C50400C850D3B72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D91E33F61D24B42A4677799 /* base64-decode.c in Sources */,
+				6BD31B29EB384A7B9D3A0BBE /* client-handshake.c in Sources */,
+				42C8F0C11A8A45C680FAD2B2 /* client-parser.c in Sources */,
+				BD0AE807234F4CF2930A37E2 /* client.c in Sources */,
+				6CB860B96B93438494DD01E8 /* context.c in Sources */,
+				96AB212284624926B37CBEF1 /* daemonize.c in Sources */,
+				FCB100B5F88949D2A6C6FD6D /* extension-deflate-frame.c in Sources */,
+				F030FEF024394EDB8FD60BFB /* extension-deflate-stream.c in Sources */,
+				FCEBC40AF0DD496DB631CA52 /* extension.c in Sources */,
+				83D76A5562F647A1AE3FA800 /* handshake.c in Sources */,
+				FFE1C2B54F2F4C9EB1C67B4F /* libwebsockets.c in Sources */,
+				4ED197A5E8D9479389C1F986 /* lws-plat-unix.c in Sources */,
+				E0C94BF737B9448AA22C8B34 /* output.c in Sources */,
+				499CD8623A5342A1B7BBBCF4 /* parsers.c in Sources */,
+				D8440F143E03497488A31E41 /* pollfd.c in Sources */,
+				7EB3E0D679964B949CC718FC /* server-handshake.c in Sources */,
+				445640C2ADCB4E279578D2A1 /* server.c in Sources */,
+				65C43A33C3F54352847498ED /* service.c in Sources */,
+				8B2687658FA645FDB8BAC3D1 /* sha-1.c in Sources */,
+				58E41E32E94A4600B07C4A54 /* ssl.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		069E50C12D4A42F89F1C6246 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8A042702E3344D2A5FA4D74 /* test-server.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07C22CDBED1B450B9BD07765 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC93DA26B8245CE84B9499A /* test-fraggle.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19F4496FB1E042199032FA85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6167BCF7BF314D9DA8B3FE35 /* test-client.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A0C0954F1AF47E5844A49F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57E3A7FE51564099AE4356E8 /* test-server.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D463DADF624426594149F64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7725B7D7B15442F19EF20437 /* base64-decode.c in Sources */,
+				4D744EE72B5A4A4080C387D6 /* client-handshake.c in Sources */,
+				7A69934E6F3748E6899C2863 /* client-parser.c in Sources */,
+				BF15647EF22743BCA32A60E7 /* client.c in Sources */,
+				F7EACE3A78F549ADB1DE2D43 /* context.c in Sources */,
+				42EDD5FE867340B1831BD744 /* daemonize.c in Sources */,
+				64C41757D4824F41B5476C63 /* extension-deflate-frame.c in Sources */,
+				975133487DB145CAAA18D486 /* extension-deflate-stream.c in Sources */,
+				E0AB1A222F784146B83F62DB /* extension.c in Sources */,
+				D0E62043184E4CFC86F7F9BA /* handshake.c in Sources */,
+				B2E482D200C94E5FA6F02C46 /* libwebsockets.c in Sources */,
+				9CD889A002744882AEC68D2F /* lws-plat-unix.c in Sources */,
+				DF1F22E1504042C79299B325 /* output.c in Sources */,
+				29EC417FB8534D7CA52E62CC /* parsers.c in Sources */,
+				CF6797D0584B4D7E9ECAE1D8 /* pollfd.c in Sources */,
+				BB82A0BBD0C34065B456015C /* server-handshake.c in Sources */,
+				920AC79237994DA8997CFBA2 /* server.c in Sources */,
+				D178317A059641B7A4892C6D /* service.c in Sources */,
+				6986DBA5898241AABB9B3E84 /* sha-1.c in Sources */,
+				1DD6C4EC05A74DB6BBD44B2C /* ssl.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CDD24ED89144446AC04BC9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21E7530486494BBBAD934886 /* test-echo.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E32ADCAA59924D6688DF7F35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FFAE0F8887348FC9875EB28 /* test-ping.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		029EEBBF16A843F3A10E7CE9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A93429E4422A4263A3EE5593 /* ZERO_CHECK */;
+			targetProxy = B0CA55DA9FFC4AB38E4E0B23 /* PBXContainerItemProxy */;
+		};
+		02E6D71A1206431F9D0F69F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 472C3DA5D07A4F198875819C /* test-fraggle */;
+			targetProxy = 1198A4C383D4461196414864 /* PBXContainerItemProxy */;
+		};
+		0E7BAA97B9C64923BC1926D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EDF2121DD3546CBBCC8352D /* websockets_shared */;
+			targetProxy = 63B2DB4F41834C0F9C827D3A /* PBXContainerItemProxy */;
+		};
+		2BD1286D0E05461EB9CC6636 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21629C2F74664406BAFDC88E /* test-server */;
+			targetProxy = 38B30A83B6B4446CAD4DE407 /* PBXContainerItemProxy */;
+		};
+		34CA311BFDDB4AFE8FB9C143 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A93429E4422A4263A3EE5593 /* ZERO_CHECK */;
+			targetProxy = A19008E3EB144778850E92F2 /* PBXContainerItemProxy */;
+		};
+		34F759852096413FBF277228 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 515BBC3DC7674E94839B7208 /* test-echo */;
+			targetProxy = 5E4315200C1945F08AE731F2 /* PBXContainerItemProxy */;
+		};
+		55708F9DB7CA456DA7E02460 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50F90B5FD91748C38A6A06F9 /* websockets */;
+			targetProxy = 6C06CD82ACCC475CB6E48C05 /* PBXContainerItemProxy */;
+		};
+		613CB148B95341F8A398259D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDEDD8F9430241569B6F1FA2 /* test-client */;
+			targetProxy = 4828A1E0318247EBA1C03CE8 /* PBXContainerItemProxy */;
+		};
+		6B4AB3AEADBB4F6E8456A3AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A93429E4422A4263A3EE5593 /* ZERO_CHECK */;
+			targetProxy = 62DE91CC21E542858993D71D /* PBXContainerItemProxy */;
+		};
+		886201BFA9194277939C1494 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A93429E4422A4263A3EE5593 /* ZERO_CHECK */;
+			targetProxy = A1CABC3E42A444DC837F9B53 /* PBXContainerItemProxy */;
+		};
+		8B38F4B918494AFF8C3811B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A93429E4422A4263A3EE5593 /* ZERO_CHECK */;
+			targetProxy = D3FE8916089F478290180A03 /* PBXContainerItemProxy */;
+		};
+		9A45C876488943D28F538DC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A93429E4422A4263A3EE5593 /* ZERO_CHECK */;
+			targetProxy = A361620871A94BA0946119F9 /* PBXContainerItemProxy */;
+		};
+		B77E5F39C3EE4EB9BC649DF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A93429E4422A4263A3EE5593 /* ZERO_CHECK */;
+			targetProxy = 1CEF3EAD65F54B629A73649E /* PBXContainerItemProxy */;
+		};
+		B92AF38B990C4596A4AED21D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50F90B5FD91748C38A6A06F9 /* websockets */;
+			targetProxy = 5ADF4FE1AA324016A3A04312 /* PBXContainerItemProxy */;
+		};
+		CF9F2AB4C10444CAB23E82FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E5191F65D03475DBBA6AE42 /* test-ping */;
+			targetProxy = A80F2DEA9B414D5CA347B7BF /* PBXContainerItemProxy */;
+		};
+		D4D0EA8A9BA74CA1BE48A12E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A93429E4422A4263A3EE5593 /* ZERO_CHECK */;
+			targetProxy = EA5EDF61C10D42B688940DBD /* PBXContainerItemProxy */;
+		};
+		E360195DF18E4635974BB002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 123E0B108C48406D8C9A6BB4 /* ALL_BUILD */;
+			targetProxy = 753B999837EA4043A4F18A3E /* PBXContainerItemProxy */;
+		};
+		E3975E8D01794C46B668C379 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 123E0B108C48406D8C9A6BB4 /* ALL_BUILD */;
+			targetProxy = 7337FA27F4B848699AA7750C /* PBXContainerItemProxy */;
+		};
+		E54BD9D18315431EB5003F2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50F90B5FD91748C38A6A06F9 /* websockets */;
+			targetProxy = 80DFF3BE82644B55B3D62AF1 /* PBXContainerItemProxy */;
+		};
+		E730FA5220574D5CAC435FD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A93429E4422A4263A3EE5593 /* ZERO_CHECK */;
+			targetProxy = 14AC40714AB940668EAFA7C4 /* PBXContainerItemProxy */;
+		};
+		E8165F9C8B9D4B6784B0FFBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A93429E4422A4263A3EE5593 /* ZERO_CHECK */;
+			targetProxy = 22CA13A8A0B44711954551DA /* PBXContainerItemProxy */;
+		};
+		E851E77566E44A3D9445E2F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50F90B5FD91748C38A6A06F9 /* websockets */;
+			targetProxy = 1EA60FD4A5514BF8942130EC /* PBXContainerItemProxy */;
+		};
+		E9843C3447644D30BC63B43D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50F90B5FD91748C38A6A06F9 /* websockets */;
+			targetProxy = F1F1A536FCC449B0ABC58433 /* PBXContainerItemProxy */;
+		};
+		F36B2F2519C345B88821925C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE110F73FC53414DB0070782 /* test-server-extpoll */;
+			targetProxy = C7645606D2E346F8BCF05E34 /* PBXContainerItemProxy */;
+		};
+		F8BB07DCCC62436DB5246254 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50F90B5FD91748C38A6A06F9 /* websockets */;
+			targetProxy = 63893FC730D343E8AA8C6CAC /* PBXContainerItemProxy */;
+		};
+		FF12DA0185CC48F9BFDF11E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50F90B5FD91748C38A6A06F9 /* websockets */;
+			targetProxy = 986FAEE0809C4D718D204F8B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0084D6166F9941A3890266A7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'INSTALL_DATADIR=\"/usr/local/share\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/MinSizeRel/libwebsockets.a,
+					/usr/lib/libz.dylib,
+					/usr/lib/libssl.dylib,
+					/usr/lib/libcrypto.dylib,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "libwebsockets-test-client";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		0565E2B794004C2F96BF9140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'INSTALL_DATADIR=\"/usr/local/share\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/Debug/libwebsockets.a,
+					/usr/lib/libz.dylib,
+					/usr/lib/libssl.dylib,
+					/usr/lib/libcrypto.dylib,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "libwebsockets-test-fraggle";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		12594A8B121946A3A9CC0087 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'INSTALL_DATADIR=\"/usr/local/share\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/Debug/libwebsockets.a,
+					/usr/lib/libz.dylib,
+					/usr/lib/libssl.dylib,
+					/usr/lib/libcrypto.dylib,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "libwebsockets-test-client";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		16062FB08B534EDD8E36547A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/build;
+			};
+			name = Release;
+		};
+		19D547BCF9FC4FEA9C69DB2F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		1D7F6BE39EED4613A7A98198 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'INSTALL_DATADIR=\"/usr/local/share\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/Debug/libwebsockets.a,
+					/usr/lib/libz.dylib,
+					/usr/lib/libssl.dylib,
+					/usr/lib/libcrypto.dylib,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "libwebsockets-test-ping";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		206F9AFF61C449588999B089 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		2A1B17C965E24EB4B98046A9 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'INSTALL_DATADIR=\"/usr/local/share\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "       -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/RelWithDebInfo/libwebsockets.a,
+					/usr/lib/libz.dylib,
+					/usr/lib/libssl.dylib,
+					/usr/lib/libcrypto.dylib,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "libwebsockets-test-client";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		2F0E6D3F74614AF2B1CEA004 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'INSTALL_DATADIR=\"/usr/local/share\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/MinSizeRel/libwebsockets.a,
+					/usr/lib/libz.dylib,
+					/usr/lib/libssl.dylib,
+					/usr/lib/libcrypto.dylib,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "libwebsockets-test-echo";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		3234D0A2BA89407A8B973B91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		354C9E55A4F3430B8EDB1A29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = dist;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		3D1D6F5CB5D74E6ABD78B31E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		421CDE9A428C4C93AD942184 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		4293293EBD4C4214B512DAA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		45643E5B9191431798AFC9F5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		4973E4E3FF92424E9C16397E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'INSTALL_DATADIR=\"/usr/local/share\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "       -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/RelWithDebInfo/libwebsockets.a,
+					/usr/lib/libz.dylib,
+					/usr/lib/libssl.dylib,
+					/usr/lib/libcrypto.dylib,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "libwebsockets-test-server";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		4AF417C6C14249FC9D9E0628 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = dist;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		4FBFB413572E4031BBDB99AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/build;
+			};
+			name = Debug;
+		};
+		65F836EBE93242B39EB4D7FC /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/MinSizeRel;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = websockets;
+				SDKROOT = iphoneos;
+				SECTORDER_FLAGS = "";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		68C74C7331684044BF90929B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					EXTERNAL_POLL,
+					"'INSTALL_DATADIR=\"/usr/local/share\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/Release/libwebsockets.a,
+					/usr/lib/libz.dylib,
+					/usr/lib/libssl.dylib,
+					/usr/lib/libcrypto.dylib,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "libwebsockets-test-server-extpoll";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		6BCAC403282649FD97459B0B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'INSTALL_DATADIR=\"/usr/local/share\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/MinSizeRel/libwebsockets.a,
+					/usr/lib/libz.dylib,
+					/usr/lib/libssl.dylib,
+					/usr/lib/libcrypto.dylib,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "libwebsockets-test-fraggle";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		7641CA36D093433CBF1AB0C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		77D8BC5C32AA40CAAB4562EB /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		7A95D21182404CD78AECABB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'INSTALL_DATADIR=\"/usr/local/share\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/Release/libwebsockets.a,
+					/usr/lib/libz.dylib,
+					/usr/lib/libssl.dylib,
+					/usr/lib/libcrypto.dylib,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "libwebsockets-test-ping";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		7C9B8676711F49919DDECC8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					EXTERNAL_POLL,
+					"'INSTALL_DATADIR=\"/usr/local/share\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/Debug/libwebsockets.a,
+					/usr/lib/libz.dylib,
+					/usr/lib/libssl.dylib,
+					/usr/lib/libcrypto.dylib,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "libwebsockets-test-server-extpoll";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		82D1B7AD08B34051B8C6F958 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'INSTALL_DATADIR=\"/usr/local/share\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/Release/libwebsockets.a,
+					/usr/lib/libz.dylib,
+					/usr/lib/libssl.dylib,
+					/usr/lib/libcrypto.dylib,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "libwebsockets-test-server";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		89459F29754E495B8347BF27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		8E214CE952534DA19FBF7665 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/RelWithDebInfo;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					websockets_shared_EXPORTS,
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/RelWithDebInfo;
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					/usr/lib/libz.dylib,
+					/usr/lib/libssl.dylib,
+					/usr/lib/libcrypto.dylib,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = websockets;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		8EA69CA998314923AB62C165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/Release;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					websockets_shared_EXPORTS,
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/Release;
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					/usr/lib/libz.dylib,
+					/usr/lib/libssl.dylib,
+					/usr/lib/libcrypto.dylib,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = websockets;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		8F65C44D18F047A1A12EE896 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		9591D3AD4B3647429735487A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		9BEBCCF8E94B447AA2A57B08 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'INSTALL_DATADIR=\"/usr/local/share\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "       -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/RelWithDebInfo/libwebsockets.a,
+					/usr/lib/libz.dylib,
+					/usr/lib/libssl.dylib,
+					/usr/lib/libcrypto.dylib,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "libwebsockets-test-echo";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		9D031697F35449FFB6B23892 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/build;
+			};
+			name = MinSizeRel;
+		};
+		A8173E602E0F488BA9F3B066 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		B3B9E5CBE323499B88ECFE61 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'INSTALL_DATADIR=\"/usr/local/share\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "       -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/RelWithDebInfo/libwebsockets.a,
+					/usr/lib/libz.dylib,
+					/usr/lib/libssl.dylib,
+					/usr/lib/libcrypto.dylib,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "libwebsockets-test-fraggle";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		B4687A55E48C48F494593F3A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					EXTERNAL_POLL,
+					"'INSTALL_DATADIR=\"/usr/local/share\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/MinSizeRel/libwebsockets.a,
+					/usr/lib/libz.dylib,
+					/usr/lib/libssl.dylib,
+					/usr/lib/libcrypto.dylib,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "libwebsockets-test-server-extpoll";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		BAD74FA72C504E3AB3B8F06A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = websockets;
+				SDKROOT = iphoneos;
+				SECTORDER_FLAGS = "";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		BFDF35C004C04AD1A33BBAFA /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					EXTERNAL_POLL,
+					"'INSTALL_DATADIR=\"/usr/local/share\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "       -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/RelWithDebInfo/libwebsockets.a,
+					/usr/lib/libz.dylib,
+					/usr/lib/libssl.dylib,
+					/usr/lib/libcrypto.dylib,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "libwebsockets-test-server-extpoll";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		C05937A9BB904CDAB8EADFF6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/MinSizeRel;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					websockets_shared_EXPORTS,
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/MinSizeRel;
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					/usr/lib/libz.dylib,
+					/usr/lib/libssl.dylib,
+					/usr/lib/libcrypto.dylib,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = websockets;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		C07C71BAB10D4FBAA9578201 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		C0A056362458419786C3E34D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = dist;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		C3CF46570A5D4532882A8199 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'INSTALL_DATADIR=\"/usr/local/share\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/MinSizeRel/libwebsockets.a,
+					/usr/lib/libz.dylib,
+					/usr/lib/libssl.dylib,
+					/usr/lib/libcrypto.dylib,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "libwebsockets-test-server";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		C47EAF000619466D95027C5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'INSTALL_DATADIR=\"/usr/local/share\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/Debug/libwebsockets.a,
+					/usr/lib/libz.dylib,
+					/usr/lib/libssl.dylib,
+					/usr/lib/libcrypto.dylib,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "libwebsockets-test-server";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		C4DCDB8D6CEB4148860CEB1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = websockets;
+				SDKROOT = iphoneos;
+				SECTORDER_FLAGS = "";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		C52DFEB9C3664F6EBB5D3D95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'INSTALL_DATADIR=\"/usr/local/share\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/Release/libwebsockets.a,
+					/usr/lib/libz.dylib,
+					/usr/lib/libssl.dylib,
+					/usr/lib/libcrypto.dylib,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "libwebsockets-test-client";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		C731922323BE4547B16F9A26 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		CC3798781DD04E6188C5824A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'INSTALL_DATADIR=\"/usr/local/share\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/Debug/libwebsockets.a,
+					/usr/lib/libz.dylib,
+					/usr/lib/libssl.dylib,
+					/usr/lib/libcrypto.dylib,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "libwebsockets-test-echo";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		CE9972A2EAAB4AAAB0B1D79A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = dist;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		D1FC6DD4A0604DB9BCF928E0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		DA52CACE9CBE4657983372E7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/bin/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'INSTALL_DATADIR=\"/usr/local/share\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/MinSizeRel/libwebsockets.a,
+					/usr/lib/libz.dylib,
+					/usr/lib/libssl.dylib,
+					/usr/lib/libcrypto.dylib,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "libwebsockets-test-ping";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = MinSizeRel;
+		};
+		DFFE0B2107C54460A04FE597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'INSTALL_DATADIR=\"/usr/local/share\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/Release/libwebsockets.a,
+					/usr/lib/libz.dylib,
+					/usr/lib/libssl.dylib,
+					/usr/lib/libcrypto.dylib,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "libwebsockets-test-fraggle";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+		E1C0FFEF43564057B63E3438 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/bin/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'INSTALL_DATADIR=\"/usr/local/share\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "       -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/RelWithDebInfo/libwebsockets.a,
+					/usr/lib/libz.dylib,
+					/usr/lib/libssl.dylib,
+					/usr/lib/libcrypto.dylib,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "libwebsockets-test-ping";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		E410731AB55F4CB38C890D86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/Debug;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					websockets_shared_EXPORTS,
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/Debug;
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CFLAGS = "   -fPIC  ";
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					/usr/lib/libz.dylib,
+					/usr/lib/libssl.dylib,
+					/usr/lib/libcrypto.dylib,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = websockets;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Debug;
+		};
+		E5A38F5E25884090B7533EB8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/RelWithDebInfo;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "       -DNDEBUG  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = websockets;
+				SDKROOT = iphoneos;
+				SECTORDER_FLAGS = "";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		E6AFB241A4F04A1CAFC9DC2B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				OTHER_CFLAGS = "  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		ED4354160BEC48D4AAD58680 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'INSTALL_DATADIR=\"/usr/local/share\"'",
+					CMAKE_BUILD,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build,
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/lib,
+					/opt/local/include,
+				);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = (
+					"-Wl,-search_paths_first",
+					"-Wl,-headerpad_max_install_names",
+					/Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build/lib/Release/libwebsockets.a,
+					/usr/lib/libz.dylib,
+					/usr/lib/libssl.dylib,
+					/usr/lib/libcrypto.dylib,
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "libwebsockets-test-echo";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/FrankLin/Downloads/libwebsocket_cocos2dx/libwebsockets/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1281DDB5828A4AAF8A1067D1 /* Build configuration list for PBXProject "libwebsockets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FBFB413572E4031BBDB99AB /* Debug */,
+				16062FB08B534EDD8E36547A /* Release */,
+				9D031697F35449FFB6B23892 /* MinSizeRel */,
+				77D8BC5C32AA40CAAB4562EB /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		16E1238FEC6E40FE926EDFBF /* Build configuration list for PBXNativeTarget "test-client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12594A8B121946A3A9CC0087 /* Debug */,
+				C52DFEB9C3664F6EBB5D3D95 /* Release */,
+				0084D6166F9941A3890266A7 /* MinSizeRel */,
+				2A1B17C965E24EB4B98046A9 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		20F7D0C06461439DB3FE3DDC /* Build configuration list for PBXNativeTarget "websockets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4DCDB8D6CEB4148860CEB1A /* Debug */,
+				BAD74FA72C504E3AB3B8F06A /* Release */,
+				65F836EBE93242B39EB4D7FC /* MinSizeRel */,
+				E5A38F5E25884090B7533EB8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		34AF921307CC486E876DB4DB /* Build configuration list for PBXNativeTarget "test-ping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D7F6BE39EED4613A7A98198 /* Debug */,
+				7A95D21182404CD78AECABB1 /* Release */,
+				DA52CACE9CBE4657983372E7 /* MinSizeRel */,
+				E1C0FFEF43564057B63E3438 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4A57806A8EEF4162AFE1C7F6 /* Build configuration list for PBXNativeTarget "websockets_shared" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E410731AB55F4CB38C890D86 /* Debug */,
+				8EA69CA998314923AB62C165 /* Release */,
+				C05937A9BB904CDAB8EADFF6 /* MinSizeRel */,
+				8E214CE952534DA19FBF7665 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4AAE2363CCE64EBE9BF7D84D /* Build configuration list for PBXNativeTarget "test-server" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C47EAF000619466D95027C5D /* Debug */,
+				82D1B7AD08B34051B8C6F958 /* Release */,
+				C3CF46570A5D4532882A8199 /* MinSizeRel */,
+				4973E4E3FF92424E9C16397E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5AE4E2EF1790488980B2651D /* Build configuration list for PBXNativeTarget "test-fraggle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0565E2B794004C2F96BF9140 /* Debug */,
+				DFFE0B2107C54460A04FE597 /* Release */,
+				6BCAC403282649FD97459B0B /* MinSizeRel */,
+				B3B9E5CBE323499B88ECFE61 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		644C1954195C49CDB675166E /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4293293EBD4C4214B512DAA7 /* Debug */,
+				421CDE9A428C4C93AD942184 /* Release */,
+				A8173E602E0F488BA9F3B066 /* MinSizeRel */,
+				E6AFB241A4F04A1CAFC9DC2B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		740E1EDCF66446A4B9588F44 /* Build configuration list for PBXNativeTarget "test-server-extpoll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C9B8676711F49919DDECC8C /* Debug */,
+				68C74C7331684044BF90929B /* Release */,
+				B4687A55E48C48F494593F3A /* MinSizeRel */,
+				BFDF35C004C04AD1A33BBAFA /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		784FD2A536754AC488F6B263 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C07C71BAB10D4FBAA9578201 /* Debug */,
+				3234D0A2BA89407A8B973B91 /* Release */,
+				45643E5B9191431798AFC9F5 /* MinSizeRel */,
+				19D547BCF9FC4FEA9C69DB2F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		79F2FC1F01E84EB8B69DE47D /* Build configuration list for PBXAggregateTarget "dist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0A056362458419786C3E34D /* Debug */,
+				354C9E55A4F3430B8EDB1A29 /* Release */,
+				4AF417C6C14249FC9D9E0628 /* MinSizeRel */,
+				CE9972A2EAAB4AAAB0B1D79A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8040E41D30C1470CAE77E03F /* Build configuration list for PBXNativeTarget "test-echo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC3798781DD04E6188C5824A /* Debug */,
+				ED4354160BEC48D4AAD58680 /* Release */,
+				2F0E6D3F74614AF2B1CEA004 /* MinSizeRel */,
+				9BEBCCF8E94B447AA2A57B08 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		92ADFCE0E5544A4CB8F390CF /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89459F29754E495B8347BF27 /* Debug */,
+				7641CA36D093433CBF1AB0C2 /* Release */,
+				206F9AFF61C449588999B089 /* MinSizeRel */,
+				C731922323BE4547B16F9A26 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AC07C236104141FEAA1055E3 /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9591D3AD4B3647429735487A /* Debug */,
+				3D1D6F5CB5D74E6ABD78B31E /* Release */,
+				D1FC6DD4A0604DB9BCF928E0 /* MinSizeRel */,
+				8F65C44D18F047A1A12EE896 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C5ABA370C774EF38A076118 /* Project object */;
+}
