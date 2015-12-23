@@ -1,8 +1,10 @@
+#libwebsockets
 This is a fork repo of libwebsockets (https://github.com/warmcat/libwebsockets), used for Sakura (https://github.com/DaYeSquad/sakura).
 
-*How to build:
+##How to build:
 
-*iOS* (inspired by ofxLibwebsockets https://github.com/labatrockwell/ofxLibwebsockets):
+##iOS 
+(inspired by ofxLibwebsockets https://github.com/labatrockwell/ofxLibwebsockets):
 
 1.Clone libwebsockets
 2.Use resources in ofxLibwebsockets/extras/ios_libwebsockets
