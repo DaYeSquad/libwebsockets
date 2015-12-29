@@ -36,3 +36,16 @@ cmake -DCMAKE_TOOLCHAIN_FILE=/path/to/ofxLibwebsockets/extras/ios_libwebsockets/
 lipo -create libwebsockets_phone.a libwebsockets_simulator.a -output libwebsockets.a
 ```
 
+##Android
+(config.h和其他头文件已经被放在jni/，在不修改libwebsockets配置时无需修改)
+
+1、修改jni/Android.mk第14行，将其修改为本地的openssl include路径
+
+2、进入根目录，执行ndk-build
+
+```
+cd /path/to/libwebsockets
+ndk-build
+```
+
+3、编译完成的静态链接库在obj/文件夹中
